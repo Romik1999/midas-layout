@@ -1,9 +1,12 @@
 .section-title {
-  font-family: UniNeue, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 110%;
+  color: #14213D;
+  text-align: center;
+  font-family: Segoe UI, sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -1.65px;
+  text-transform: uppercase;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,12 +14,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 0;
-  margin-bottom: 80px;
+  margin-bottom: 0;
 }
 
 .section-title--white {
@@ -36,7 +38,6 @@
 @media screen and (max-width: 992px) {
   .section-title {
     font-size: 35px;
-    margin-bottom: 40px;
   }
 }
 

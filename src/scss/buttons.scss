@@ -15,6 +15,7 @@
   box-sizing: border-box;
   transition: 0.2s;
   cursor: pointer;
+  width: 100%;
 
   @media screen and (max-width: 1441px) {
     font-size: 18px;
@@ -47,6 +48,17 @@
       & svg {
         fill: $yellow;
       }
+    }
+  }
+
+  &--blue{
+    background: $blue;
+    border: 1px solid $blue;
+    color: $white;
+
+    &:hover{
+      background: transparent;
+      color: $blue;
     }
   }
 }

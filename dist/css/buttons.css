@@ -20,6 +20,7 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
+  width: 100%;
 }
 
 .btn:focus {
@@ -43,6 +44,17 @@
 
 .btn--yellow:hover svg {
   fill: #FCA311;
+}
+
+.btn--blue {
+  background: #14213D;
+  border: 1px solid #14213D;
+  color: #ffffff;
+}
+
+.btn--blue:hover {
+  background: transparent;
+  color: #14213D;
 }
 
 @media screen and (max-width: 1441px) {

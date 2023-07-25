@@ -1,0 +1,203 @@
+@import "../../scss/colors.scss";
+
+.clearance {
+  &__top {
+    margin-bottom: 80px;
+  }
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+    column-gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 992px) {
+      padding-bottom: 133px;
+      margin-bottom: 0;
+      padding-right: 140px;
+    }
+    @media screen and (max-width: 769px) {
+      padding-right: 0;
+    }
+  }
+
+  &__img {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    max-width: 41%;
+
+    @media screen and (max-width: 1199px) {
+      max-width: 35%;
+    }
+    @media screen and (max-width: 992px) {
+      display: none;
+      transform: none;
+      top: unset;
+      left: unset;
+      right: -20px;
+      bottom: -5px;
+    }
+    @media screen and (max-width: 769px) {
+      max-width: 215px;
+      z-index: 1;
+    }
+    @media screen and (max-width: 355px) {
+      max-width: 150px;
+    }
+
+    &--mob {
+      display: none;
+
+      @media screen and (max-width: 992px) {
+        display: flex;
+      }
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__conditions {
+    display: grid;
+    grid-template-columns: repeat(2, 395px);
+    justify-content: space-between;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 160px;
+    width: 100%;
+
+    @media screen and (max-width: 1441px) {
+      grid-row-gap: 100px;
+    }
+    @media screen and (max-width: 1199px) {
+      grid-row-gap: 70px;
+    }
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      grid-row-gap: 50px;
+    }
+    @media screen and (max-width: 769px) {
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: 0;
+      row-gap: 15px;
+    }
+  }
+
+  &__condition {
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
+      max-width: 340px;
+      width: 100%;
+      margin-left: auto;
+
+      @media screen and (max-width: 1441px) {
+        max-width: 300px;
+      }
+      @media screen and (max-width: 769px) {
+        max-width: 100%;
+      }
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 769px) {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #A7ACAB;
+        width: 100%;
+      }
+    }
+  }
+
+  &-condition {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    &__title {
+      color: $blue;
+      font-family: Segoe UI, sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-left: 22px;
+      position: relative;
+      white-space: nowrap;
+
+      @media screen and (max-width: 1441px) {
+        font-size: 22px;
+        padding-left: 18px;
+      }
+      @media screen and (max-width: 1199px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 992px) {
+        font-size: 18px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 44px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-bottom: 5px solid $yellow;
+        border-left: 9px solid $yellow;
+        border-radius: 4px;
+
+        @media screen and (max-width: 1441px) {
+          width: 25px;
+          height: 32px;
+        }
+        @media screen and (max-width: 355px) {
+          width: 20px;
+          height: 28px;
+        }
+      }
+    }
+
+    &__text {
+      color: $blue;
+      font-size: 20px;
+      line-height: 120%;
+      padding-left: 44px;
+
+      @media screen and (max-width: 1441px) {
+        font-size: 18px;
+        padding-left: 44px;
+      }
+      @media screen and (max-width: 992px) {
+        padding-left: 30px;
+      }
+      @media screen and (max-width: 769px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__button {
+    max-width: 500px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1441px) {
+      max-width: 450px;
+    }
+    @media screen and (max-width: 769px) {
+      z-index: 2;
+      position: relative;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+  }
+}
