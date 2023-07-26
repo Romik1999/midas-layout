@@ -1,0 +1,111 @@
+@import "../../scss/colors.scss";
+
+.faq {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 769px) {
+      row-gap: 10px;
+    }
+  }
+
+  &-item {
+    border-radius: 20px;
+    border: 1px solid #CBCBCB;
+    padding: 26px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 769px) {
+      padding: 9px 12px;
+      border-radius: 10px;
+    }
+
+    &__top {
+      display: flex;
+      position: relative;
+      column-gap: 5px;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      &.active {
+        & .faq-item__icon {
+          & svg,
+          & img {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    &__title {
+      color: #2F2F2F;
+      font-family: Segoe UI, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+
+      @media screen and (max-width: 1441px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 769px) {
+        font-size: 16px;
+      }
+    }
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      box-sizing: border-box;
+      width: 35px;
+      height: 35px;
+      background: $yellow;
+      border-radius: 50%;
+
+      @media screen and (max-width: 769px) {
+        width: 26px;
+        height: 26px;
+      }
+
+      & img,
+      & svg {
+        transition: 0.2s;
+      }
+    }
+
+    &__bottom {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.2s;
+    }
+
+    &__text {
+      color: #2F2F2F;
+      font-size: 18px;
+      line-height: 120%;
+      padding-right: 84px;
+      padding-top: 20px;
+      box-sizing: border-box;
+
+      @media screen and (max-width: 1441px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 769px) {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-right: 31px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+  }
+}
