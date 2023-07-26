@@ -1,0 +1,165 @@
+@import "../../scss/colors.scss";
+
+.faster {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      justify-content: center;
+      column-gap: 40px;
+    }
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+      row-gap: 26px;
+    }
+  }
+
+  &__item {
+    max-width: 406px;
+    width: 100%;
+  }
+
+  &__img {
+    max-width: 49%;
+    width: 100%;
+    display: flex;
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+
+    & img,
+    & svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-item {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    background: $white;
+    padding: 67px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+
+    @media screen and (max-width: 1441px) {
+      row-gap: 14px;
+      padding: 40px 32px;
+    }
+    @media screen and (max-width: 1199px) {
+      padding: 30px 26px;
+    }
+    @media screen and (max-width: 992px) {
+      padding-top: 26px;
+      padding-left: 26px;
+      padding-right: 26px;
+      padding-bottom: 14px;
+      border-radius: 10px;
+      align-items: center;
+      text-align: center;
+    }
+    @media screen and (max-width: 769px) {
+      row-gap: 10px;
+    }
+    @media screen and (max-width: 350px) {
+      padding: 20px 15px;
+    }
+
+    &--yellow {
+      & .faster-item {
+        &__title {
+          color: $yellow;
+        }
+
+        &__text {
+          & span {
+            color: $yellow;
+          }
+        }
+      }
+    }
+
+    &--dark {
+      & .faster-item {
+        &__title {
+          color: #2F2F2F;
+        }
+
+        &__text {
+          color: #2F2F2F;
+        }
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #14213D;
+      z-index: -1;
+      right: -24px;
+      bottom: -24px;
+      border-radius: 20px;
+
+      @media screen and (max-width: 1441px) {
+        right: -20px;
+        bottom: -20px;
+      }
+      @media screen and (max-width: 992px) {
+        width: calc(100% + 20px);
+        left: -10px;
+        bottom: -10px;
+        border-radius: 10px;
+      }
+    }
+
+    &__title {
+      color: $yellow;
+      font-family: Segoe UI, sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+
+      @media screen and (max-width: 1441px) {
+        font-size: 23px;
+      }
+      @media screen and (max-width: 769px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 18px;
+      }
+    }
+
+    &__text {
+      color: #2F2F2F;
+      font-size: 18px;
+
+      @media screen and (max-width: 1441px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 14px;
+      }
+
+      & p {
+        margin: 0;
+      }
+
+      & span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+  }
+}
