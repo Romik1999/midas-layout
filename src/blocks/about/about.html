@@ -1,0 +1,52 @@
+<section class="about">
+    <div class="cont">
+        <div class="section-top about__top">
+            @@include('section-title/section-title.html', {sectionTitleClass: 'about__title', sectionTitleText:
+            'Немного'})
+            @@include('section-subtitle/section-subtitle.html', {sectionSubTitleClass: 'about__subtitle',
+            sectionSubTitleText: 'о нашей компании'})
+        </div>
+        <div class="about__wrapper">
+            <div class="about__info">
+                <div class="about__text">
+                    Работаем исключительно в Ваших интересах,
+                    на результат в одобрение и выдаче кредитов своим клиентам. Обратившись к нам, вы в первую очередь
+                    получаете консультацию от ведущих профессионалов рынка, так как у нас работают люди исключительно с
+                    финансовым и экономическим образованием, бывшие сотрудники банков в городе, которые имеют огромный
+                    опыт и знания банковской системы изнутри.
+                </div>
+                <div class="about__imgs">
+                    <div class="about__img">
+                        <img src="./img/about/about-1.png">
+                    </div>
+                    <div class="about__img">
+                        <img src="./img/about/about-1.png">
+                    </div>
+                    <div class="about__img">
+                        <img src="./img/about/about-1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="about__form">
+                <div class="about-form">
+                    <div class="about-form__title">
+                        НУЖНА ПОМОЩЬ
+                        В ПОЛУЧЕНИИ КРЕДИТА В москве?
+                    </div>
+                    <div class="about-form__subtitle">
+                        С нами вы получите одобрение по кредиту
+                        по ставке от 5.5%, даже с плохой
+                        кредитной историей
+                    </div>
+                    <div class="about-form__form">
+                        @@include('form/form.html')
+                    </div>
+                    <div class="about-form__notice">
+                        Нажимая кнопку “Подать заявку” вы соглашаетесь
+                        с Политикой конфеденциальности нашей компании
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

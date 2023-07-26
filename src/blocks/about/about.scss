@@ -1,0 +1,156 @@
+@import "../../scss/colors.scss";
+
+.about {
+  @media screen and (max-width: 769px) {
+    padding: 40px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    column-gap: 100px;
+
+    @media screen and (max-width: 1441px) {
+      column-gap: 50px;
+    }
+    @media screen and (max-width: 992px) {
+      column-gap: 30px;
+    }
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+      row-gap: 35px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 55px;
+    max-width: 49%;
+    width: 100%;
+
+    @media screen and (max-width: 769px) {
+      max-width: 100%;
+      row-gap: 35px;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__text {
+    color: #2F2F2F;
+    font-size: 24px;
+    line-height: 130%;
+
+    @media screen and (max-width: 1441px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 769px) {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  &__imgs {
+    display: flex;
+    column-gap: 20px;
+
+    @media screen and (max-width: 769px) {
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+
+    & img,
+    & svg {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  &-form {
+    border-radius: 20px;
+    background: #14213D;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 769px) {
+      padding: 30px 15px;
+    }
+
+    &__title {
+      color: $white;
+      text-align: center;
+      font-family: Segoe UI, sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: -1.2px;
+      margin-bottom: 10px;
+
+      @media screen and (max-width: 1441px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 992px) {
+        font-size: 35px;
+      }
+      @media screen and (max-width: 769px) {
+        font-size: 30px;
+        text-align: center;
+      }
+      @media screen and (max-width: 340px) {
+        font-size: 30px;
+      }
+    }
+
+    &__subtitle {
+      color: $white;
+      text-align: center;
+      font-family: Segoe UI, sans-serif;
+      font-size: 24px;
+      line-height: 120%;
+      margin-bottom: 25px;
+
+      @media screen and (max-width: 1441px) {
+        font-size: 22px;
+      }
+      @media screen and (max-width: 992px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 769px) {
+        text-align: center;
+      }
+      @media screen and (max-width: 340px) {
+        font-size: 30px;
+      }
+    }
+
+    &__form {
+      margin-bottom: 10px;
+    }
+
+    &__notice {
+      color: $white;
+      text-align: center;
+      font-size: 14px;
+      line-height: 120%;
+      max-width: 495px;
+      width: 100%;
+      margin: 0 auto;
+
+      @media screen and (max-width: 769px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+  }
+}
