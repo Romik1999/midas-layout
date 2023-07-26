@@ -644,6 +644,13 @@ main {
   line-height: 120%;
 }
 
+.info__text {
+  color: #2F2F2F;
+  text-align: center;
+  font-size: 18px;
+  line-height: 120%;
+}
+
 .hamburger {
   position: relative;
   width: 40px;
@@ -1086,6 +1093,10 @@ main {
     font-size: 18px;
   }
 
+  .info__text {
+    font-size: 16px;
+  }
+
   .section-title {
     font-size: 40px;
   }
@@ -1483,6 +1494,10 @@ main {
 
   .simple__item:nth-child(5) .simple-item__icon {
     max-width: 81px;
+  }
+
+  .info__text {
+    font-size: 14px;
   }
 
   .section-title {
