@@ -1,7 +1,7 @@
 @font-face {
   font-family: Inter;
   font-display: swap;
-  src: url("../fonts/Inter/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter/Inter-Regular.woff") format("woff");
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: Segoe UI;
   font-display: swap;
-  src: url("../fonts/Segoe/Segoe-UI.woff2") format("woff2"), url("../fonts/Segoe/Segoe-UI.woff") format("woff");
+  src: url("../fonts/Segoe-UI.woff2") format("woff2"), url("../fonts/Segoe-UI.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: Segoe UI;
   font-display: swap;
-  src: url("../fonts/Segoe/Segoe-UI.woff2") format("woff2"), url("../fonts/Segoe/Segoe-UI.woff") format("woff");
+  src: url("../fonts/Segoe-UI-Bold.woff2") format("woff2"), url("../fonts/Segoe-UI-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -649,6 +649,54 @@ main {
   text-align: center;
   font-size: 18px;
   line-height: 120%;
+}
+
+.partners__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+  max-width: 1115px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.partners__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.partners__image:hover img,
+.partners__image:hover svg {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-filter: unset;
+          filter: unset;
+}
+
+.partners__image img,
+.partners__image svg {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-filter: gray;
+          filter: gray;
 }
 
 .hamburger {
@@ -1498,6 +1546,15 @@ main {
 
   .info__text {
     font-size: 14px;
+  }
+
+  .partners__images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 
   .section-title {
