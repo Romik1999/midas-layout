@@ -63,6 +63,10 @@ main {
   flex-direction: column;
   row-gap: 15px;
   margin-bottom: 60px;
+
+  @media screen and (max-width: 769px) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 1199px) {

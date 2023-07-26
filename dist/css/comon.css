@@ -86,6 +86,12 @@ main {
   }
 }
 
+@media screen and (max-width: 769px) {
+  .section-top {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   section {
     padding: 40px 15px;
