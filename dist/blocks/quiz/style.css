@@ -111,6 +111,7 @@
 .quiz-question__item {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .quiz-question__input {

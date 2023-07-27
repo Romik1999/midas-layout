@@ -1,3 +1,7 @@
+.clearance {
+  overflow: hidden;
+}
+
 .clearance__top {
   margin-bottom: 80px;
 }

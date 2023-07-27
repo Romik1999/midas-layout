@@ -1,6 +1,8 @@
 @import "../../scss/colors.scss";
 
 .clearance {
+  overflow: hidden;
+
   &__top {
     margin-bottom: 80px;
   }
