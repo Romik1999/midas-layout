@@ -6,16 +6,28 @@
     margin-bottom: 80px;
   }
 }
+@media screen and (max-width: 992px) {
+  .simple__top {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .simple__top {
+    margin-bottom: 30px;
+  }
+}
 .simple__items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   column-gap: 15px;
   row-gap: 15px;
 }
 @media screen and (max-width: 850px) {
   .simple__items {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    row-gap: 35px;
   }
 }
 .simple__item:nth-child(1) .simple-item {
@@ -28,7 +40,7 @@
 }
 @media screen and (max-width: 769px) {
   .simple__item:nth-child(1) .simple-item {
-    padding-left: 50px;
+    padding-left: 60px;
   }
 }
 @media screen and (max-width: 1441px) {
@@ -39,6 +51,7 @@
 @media screen and (max-width: 769px) {
   .simple__item:nth-child(1) .simple-item__icon {
     max-width: 45px;
+    left: 10px;
   }
 }
 .simple__item:nth-child(1) .simple-item__text {
@@ -62,6 +75,11 @@
     padding-left: 75px;
   }
 }
+@media screen and (max-width: 769px) {
+  .simple__item:nth-child(3) .simple-item {
+    padding-left: 60px;
+  }
+}
 @media screen and (max-width: 1441px) {
   .simple__item:nth-child(3) .simple-item__icon {
     max-width: 101px;
@@ -80,12 +98,22 @@
     max-width: 250px;
   }
 }
+@media screen and (max-width: 769px) {
+  .simple__item:nth-child(3) .simple-item__text {
+    max-width: 100%;
+  }
+}
 .simple__item:nth-child(5) .simple-item {
   padding-left: 105px;
 }
 @media screen and (max-width: 1441px) {
   .simple__item:nth-child(5) .simple-item {
     padding-left: 75px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .simple__item:nth-child(5) .simple-item {
+    padding-left: 60px;
   }
 }
 @media screen and (max-width: 1441px) {
@@ -104,6 +132,11 @@
 @media screen and (max-width: 850px) {
   .simple__item:nth-child(5) .simple-item__text {
     max-width: 250px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .simple__item:nth-child(5) .simple-item__text {
+    max-width: 100%;
   }
 }
 .simple__item--line {

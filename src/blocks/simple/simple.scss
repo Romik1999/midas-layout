@@ -7,17 +7,25 @@
     @media screen and (max-width: 1441px) {
       margin-bottom: 80px;
     }
+    @media screen and (max-width: 992px) {
+      margin-bottom: 60px;
+    }
+    @media screen and (max-width: 769px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__items {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     column-gap: 15px;
     row-gap: 15px;
 
     @media screen and (max-width: 850px) {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
+      row-gap: 35px;
     }
   }
 
@@ -30,7 +38,7 @@
           padding-left: 75px;
         }
         @media screen and (max-width: 769px) {
-          padding-left: 50px;
+          padding-left: 60px;
         }
 
         &__icon {
@@ -39,6 +47,7 @@
           }
           @media screen and (max-width: 769px) {
             max-width: 45px;
+            left: 10px;
           }
         }
 
@@ -62,6 +71,9 @@
         @media screen and (max-width: 1441px) {
           padding-left: 75px;
         }
+        @media screen and (max-width: 769px) {
+          padding-left: 60px;
+        }
 
         &__icon {
           @media screen and (max-width: 1441px) {
@@ -78,6 +90,9 @@
           @media screen and (max-width: 850px) {
             max-width: 250px;
           }
+          @media screen and (max-width: 769px) {
+            max-width: 100%;
+          }
         }
       }
     }
@@ -88,6 +103,9 @@
 
         @media screen and (max-width: 1441px) {
           padding-left: 75px;
+        }
+        @media screen and (max-width: 769px) {
+          padding-left: 60px;
         }
 
         &__icon {
@@ -104,6 +122,9 @@
 
           @media screen and (max-width: 850px) {
             max-width: 250px;
+          }
+          @media screen and (max-width: 769px) {
+            max-width: 100%;
           }
         }
       }
