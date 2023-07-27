@@ -24,7 +24,7 @@
                 </div>
                 <div class="header__logo">ООО "Мидас"</div>
                 <div class="header__text">Помощь в получении кредита в Москве</div>
-                <div class="header__button">
+                <button class="header__button" data-modal>
                     <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <mask id="mask0_1_526" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="35">
                             <rect width="35" height="35" fill="url(#pattern0)"/>
@@ -40,7 +40,7 @@
                         </defs>
                     </svg>
                     Бесплатная консультация
-                </div>
+                </button>
             </div>
         </div>
     </div>
@@ -83,9 +83,9 @@
                 <div class="hero__image">
                     <img src="./img/hero/hero-img.png" alt="hero">
                 </div>
-                <div class="hero__button btn btn--blue">
+                <button class="hero__button btn btn--blue" data-modal>
                     Подать заявку
-                </div>
+                </button>
                 <div class="hero__notice">*Для получения кредита необходимо гражданство РФ</div>
                 <div class="hero__advantages">
                     <div class="hero-advantages">
@@ -224,7 +224,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="calc-form__button btn btn--blue">Заполнить заявку</div>
+                    <button class="calc-form__button btn btn--blue" data-modal>Заполнить заявку</button>
                 </div>
             </div>
             <div class="calc__info">
@@ -319,7 +319,7 @@
                 <img src="./img/clearance/clearance-img-mob.png">
             </div>
         </div>
-        <button class="clearance__button btn btn--blue">Оформить кредит</button>
+        <button class="clearance__button btn btn--blue" data-modal>Оформить кредит</button>
     </div>
 </section>
     <section class="help">
@@ -412,8 +412,8 @@
         <label class="form__field">
             <input class="form__input" placeholder="Сумма кредита">
         </label>
-        <button class="form__submit" type="submit">Подать завку</button>
     </div>
+    <button class="form__submit" type="submit">Подать завку</button>
 </form>
 
 <script>
@@ -864,16 +864,19 @@
     </div>
 </footer>
 
-<div class="modal">
+<div class="modal modal--active">
     <div class="modal__container">
         <div class="modal__wrapper">
-            <img class="modal__close" src="./img/close.svg">
-            <h2 class="section-title modal__title">Оcтавьте заявку прямо сейчас!</h2>
+            <img class="modal__close" src="./img/icons/close.svg">
+            <div class="section-top modal__top">
+                <h2 class="section-title modal__title">Оформите заявку</h2>
 
-            <div class="modal__subtitle">Менеджер свяжется с Вами в ближайшее время</div>
+                <h3 class="section-subtitle modal__subtitle">Для сотрудничества с нами оставьте свои данные.</h3>
+
+            </div>
             <div class="modal__form">
-                <form class="form form--grey">
-    <div class="form__fields">
+                <form class="form">
+    <div class="form__fields form__fields--row">
         <label class="form__field">
             <input class="form__input" placeholder="Ваше имя">
         </label>
@@ -882,10 +885,10 @@
                    onkeypress="maskPhone(event)"
                    onpaste="onPastePhone(event)">
         </label>
-        <label class="form__field">
-            <input class="form__input" placeholder="Сумма кредита">
-        </label>
-        <button class="form__submit" type="submit">Подать завку</button>
+    </div>
+    <button class="form__submit" type="submit">Получить готовый план </button>
+    <div class="form__notice">Нажимая кнопку “Получить готовый план” вы соглашаетесь
+        с Политикой конфеденциальности нашей компании
     </div>
 </form>
 
