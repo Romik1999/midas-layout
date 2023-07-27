@@ -116,6 +116,9 @@
       font-family: SegoeUI, sans-serif;
       font-size: 24px;
       line-height: 120%;
+      max-width: 515px;
+      width: 100%;
+      margin: 0 auto;
       margin-bottom: 25px;
 
       @media screen and (max-width: 1441px) {
@@ -128,7 +131,7 @@
         text-align: center;
       }
       @media screen and (max-width: 340px) {
-        font-size: 30px;
+        font-size: 16px;
       }
     }
 
