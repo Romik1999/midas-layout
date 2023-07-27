@@ -31,7 +31,7 @@
   }
 
   &__title {
-    font-family: Segoe UI, sans-serif;
+    font-family: SegoeUI, sans-serif;
     font-size: 70px;
     font-weight: 700;
     line-height: 120%;
@@ -63,8 +63,9 @@
 
   &__percent {
     color: #2F2F2F;
-    font-family: Segoe UI, sans-serif;
+    font-family: SegoeUI, sans-serif;
     font-size: 48px;
+    line-height: 120%;
     font-weight: 700;
     letter-spacing: -1.44px;
     width: fit-content;
@@ -95,7 +96,7 @@
 
     & span {
       color: #FFF;
-      font-family: Segoe UI;
+      font-family: SegoeUI;
       font-size: 60px;
       font-weight: 700;
       letter-spacing: -1.8px;
@@ -111,7 +112,7 @@
 
   &__subtitle {
     color: #2F2F2F;
-    font-family: Segoe UI, sans-serif;
+    font-family: SegoeUI, sans-serif;
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 36px;
@@ -247,7 +248,7 @@
 
     &__title {
       color: #2F2F2F;
-      font-family: Segoe UI, sans-serif;
+      font-family: SegoeUI, sans-serif;
       font-size: 20px;
       font-weight: 700;
       letter-spacing: -0.6px;
@@ -259,7 +260,7 @@
 
     &__text {
       color: #2F2F2F;
-      font-family: Segoe UI, sans-serif;
+      font-family: SegoeUI, sans-serif;
       font-size: 18px;
       line-height: 120%;
 
